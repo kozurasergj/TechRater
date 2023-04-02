@@ -28,3 +28,25 @@
   background-color: var(--primary);
   color: var(--white);
 }
+
+.arrow {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.right {
+  transition: all 0.2s;
+}
+
+.down {
+  transform: rotate(90deg);
+  transition: all 0.2s;
+}
+
+.primary svg {
+  fill: var(--white);
+}
+
+.ghost:hover svg {
+  fill: var(--white);
+}
