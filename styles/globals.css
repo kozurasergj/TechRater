@@ -31,6 +31,7 @@ a {
   --font-family: "Noto Sans", sans-serif;
 }
 
+/* tag h1 |h2 |h2 */
 .h1__header {
   margin: 0;
   font-weight: 500;
@@ -51,3 +52,28 @@ a {
   font-size: 20px;
   line-height: 27px;
 }
+
+/* tag p  */
+.p__header {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.p__coment {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.p__benefits {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.p__description {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+/*  */
