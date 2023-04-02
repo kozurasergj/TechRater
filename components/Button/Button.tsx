@@ -17,7 +17,7 @@ export const Button = ({ apperance, children, arrow = 'none', className, ...prop
         [styles.down]: arrow == 'down',
         [styles.right]: arrow == 'right',
       })}>
-        <Image src="arrow.svg" width="6" height="10"/>  
+        <Image src="arrow.svg" alt="arrow" width="6" height="10"/>  
       </span>}
     </button>
   );
