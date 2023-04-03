@@ -119,3 +119,11 @@ a {
   padding: 5px 8px;
   color: var(--primary);
 }
+
+.filled {
+  fill: var(--primary);
+}
+
+.star {
+  margin-right: 5px;
+}

@@ -1,7 +1,11 @@
 import { Button } from '@/components';
+import { Rating } from '@/components';
+import React, { useState } from 'react';
+
 export default function Home(): JSX.Element {
+  const [rating, setRating] = useState<number>(4);
   return (
-    <div>
+    <>
       <h1 className="h1__header">Курсы по Photoshop</h1>
       <h2 className="h2__header">Вакансии - Photoshop</h2>
       <h3 className="h3__header">Профессия дизайнер от 0 до PRO</h3>
@@ -19,11 +23,12 @@ export default function Home(): JSX.Element {
       <span className='mark__number__course'>10</span>
       <span className='mark__price__course'>-10 000 ₽ </span>
       <span className='mark__name__site'>hh.ru</span>
-        <span className='mark__skill'>Работа в Photoshop</span>
-        <span className='mark__skill'>Подготовка макетов</span>
-        <span className='mark__skill'>Графический дизайн</span>
-        <span className='mark__skill'>Web дизайн</span>
-        <span className='mark__skill'>Дизайн сайтов</span>
-      </div>
+      <span className='mark__skill'>Работа в Photoshop</span>
+      <span className='mark__skill'>Подготовка макетов</span>
+      <span className='mark__skill'>Графический дизайн</span>
+      <span className='mark__skill'>Web дизайн</span>
+      <span className='mark__skill'>Дизайн сайтов</span>
+      <Rating rating={rating} isEditable setRating={setRating} />
+    </>
   );
 }
