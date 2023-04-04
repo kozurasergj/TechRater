@@ -1,11 +1,9 @@
 import { HeaderProps } from "./Header.props";
-// import styles from "./Header.module.css";
-import cn from "classnames";
 
-export const Header = ({ ...props }: HeaderProps): JSX.Element => {
+export const Header = ({ className}: HeaderProps): JSX.Element => {
   return (
-    <div {...props}>
+    <header >
       Header
-    </div>
+    </header>
   );
 };

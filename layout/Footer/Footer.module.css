@@ -1,0 +1,26 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  padding: 25px 30px;
+  color: var(--white);
+  background-color: var(--primary);
+  gap: 10px 40px;
+}
+
+.law,
+.agreed,
+.privacy {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer a:hover {
+  color: var(--gray-light);
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}

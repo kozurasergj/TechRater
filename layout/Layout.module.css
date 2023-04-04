@@ -1,0 +1,44 @@
+.wrapper {
+  display: grid;
+  grid-template:
+    auto 230px minmax(320px, 1200px) auto auto 1fr auto ". header header ."
+    ". sidebar body ."
+    "footer footer footer footer";
+  min-height: 100vh;
+  gap: 0 30px;
+}
+
+.header {
+  display: none;
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.body {
+  grid-area: body;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-areas:
+      "header"
+      "body"
+      "footer";
+    grid-template-columns: minmax(320px, 1fr);
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .header {
+    display: block;
+  }
+}
