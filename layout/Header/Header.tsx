@@ -1,9 +1,10 @@
 import { HeaderProps } from "./Header.props";
 
-export const Header = (): JSX.Element => {
+export const Header = ({ className }: HeaderProps): JSX.Element => {
+
   return (
     <header >
-      Header
+      header
     </header>
   );
 };

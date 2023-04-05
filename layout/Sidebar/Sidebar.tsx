@@ -1,6 +1,6 @@
 import { SidebarProps } from "./Sidebar.props";
 
-export const Sidebar = (): JSX.Element => {
+export const Sidebar = ({ className }: SidebarProps): JSX.Element => {
   return (
     <aside >
       Sidebar
