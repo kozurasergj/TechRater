@@ -3,5 +3,3 @@ Description
 
 Technologies Used
 🛠️ The website was built using Next.js, a popular React framework that allows for server-side rendering and other performance optimizations. TypeScript was used to ensure type safety and better maintainability of the codebase. React.js was used for building the user interface and managing state. CSS and HTML were used for styling and markup respectively.
-
-👀 Here's a sneak peek of the website:
