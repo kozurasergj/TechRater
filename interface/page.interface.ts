@@ -37,4 +37,3 @@ export interface TopPageModel {
   updatedAt: Date;
   hh?: HhData;
 }
-

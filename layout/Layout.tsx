@@ -9,12 +9,12 @@ import { AppContextProvider, IAppContext } from '@/context/app.context';
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
     <div className={styles.wrapper}>
-      <Header className={styles.header} />
-      <Sidebar className={styles.sidebar} />
+      <Header />
+      <Sidebar />
       <main className={styles.body}>
         {children}
       </main>
-      <Footer className={styles.footer} />
+      <Footer  />
     </div>
   );
 };
