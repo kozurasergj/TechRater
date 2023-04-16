@@ -2,7 +2,6 @@
 	display: grid;
 	grid-template-columns: auto 230px minmax(320px, 1200px) auto;
 	grid-template-rows: auto 1fr auto;
-
 	min-height: 100vh;
 	gap: 40px 30px;
 	grid-template-areas:
@@ -11,34 +10,18 @@
 		"footer footer footer footer";
 }
 
-.header {
-	grid-area: header;
-}
-
-.sidebar {
-	grid-area: sidebar;
-}
-
 .body {
 	grid-area: body;
-
 	outline: none;
-}
-
-.footer {
-	grid-area: footer;
 }
 
 .skipLink {
 	position: fixed;
-	top: 0;
 	left: 100px;
-
+	top: 0;
 	display: block;
 	overflow: hidden;
-
 	height: 0;
-
 	color: var(--white);
 	background: var(--primary);
 }
@@ -49,11 +32,11 @@
 
 @media (max-width: 765px) {
 	.wrapper {
-		grid-template-columns: minmax(320px, 1fr);
 		grid-template-areas:
 			"header"
 			"body"
 			"footer";
+		grid-template-columns: minmax(320px, 1fr);
 		gap: 10px;
 	}
 

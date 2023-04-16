@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
   color: var(--black);
   background: #f5f6f8;
@@ -12,13 +13,10 @@ a {
   color: inherit;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --black: #3b434e;
   --gray-light: #ebebeb;
+  --gray-dark: #787d85;
   --gray: #a4a4a4;
   --gray-dark: #6c7077;
   --white: #fff;
