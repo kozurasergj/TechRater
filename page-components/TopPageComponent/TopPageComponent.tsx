@@ -1,7 +1,7 @@
 import { TopPageComponentProps } from './TopPageComponent.props';
 import styles from "./TopPageComponent.module.css";
 import Image from 'next/image';
-import { AdvantagesProps, HhData, TopPageAdvantage, TopPageModel } from '@/interface/page.interface';
+import { HhData } from '@/interface/page.interface';
 import { priceRu } from '@/Helpers/Helpers';
 import { Sort } from '@/components';
 import { SortEnum } from '@/components/Sort/Sort.props';
@@ -9,6 +9,10 @@ import { useReducer } from 'react';
 import { sortReducer } from './sort.reducer';
 
 export const TopPageComponent = ({ page, products }: TopPageComponentProps, { juniorSalary, middleSalary, seniorSalary }: HhData): JSX.Element => {
+
+  if (!page) {
+    return <h2 > Not found</h2 >;
+  }
 
   const [{ products: sortedProducts, sort }, dispathSort] = useReducer(sortReducer, { products, sort: SortEnum.Rating });
 
