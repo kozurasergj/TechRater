@@ -8,7 +8,7 @@ import { useEffect, useReducer } from 'react';
 import { sortReducer } from './sort.reducer';
 import { useReducedMotion } from 'framer-motion';
 
-export const TopPageComponent = ({ page, products, firstCategory }: TopPageComponentProps, { juniorSalary, middleSalary, seniorSalary }: HhData): JSX.Element => {
+export const TopPageComponent = ({ page, products, firstCategory }: TopPageComponentProps): JSX.Element => {
   const [{ products: sortedProducts, sort }, dispathSort] = useReducer(sortReducer, { products, sort: SortEnum.Rating });
   const shouldReduceMotion = useReducedMotion();
 

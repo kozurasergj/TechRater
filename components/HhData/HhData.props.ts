@@ -1,4 +1,4 @@
-import { HhData } from '../../interfaces/page.interface';
+import { HhData } from '../../interface/page.interface';
 
 export interface HhDataProps extends HhData {
 
