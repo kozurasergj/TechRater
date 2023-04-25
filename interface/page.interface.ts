@@ -10,9 +10,6 @@ export interface TopPageAdvantage {
   title: string;
   description: string;
 }
-export interface AdvantagesProps {
-  advantages: TopPageAdvantage[];
-}
 
 export interface HhData {
   _id: string;

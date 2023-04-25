@@ -1,16 +1,31 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
-  color: var(--black);
-  background: #f5f6f8;
+	margin: 0;
+	padding: 0;
+
+	color: var(--black);
+	background: #F5F6F8;
+
+	font-family: "Noto Sans KR", sans-serif;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+
+	color: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.visualyHidden {
+	position: absolute;
+
+	overflow: hidden;
+
+	width: 0;
+	height: 0;
 }
 
 :root {
@@ -28,111 +43,4 @@ a {
   --green-light: #c8f8e4;
   --red: #de0000;
   --font-family: "Noto Sans", sans-serif;
-}
-
-/* tag h1 |h2 |h2 */
-.h1__header {
-  margin: 0;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 35px;
-  margin-bottom: 25px;
-  color: var(--black);
-}
-
-.h2__header {
-  margin: 0;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 30px;
-  margin-bottom: 25px;
-  color: var(--black);
-}
-
-.h3__header {
-  margin: 0;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
-  color: var(--black);
-}
-
-.h4__header {
-  margin: 0;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 30px;
-  color: var(--black);
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-/* tag p  */
-.p__header {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.p__coment {
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--black);
-}
-
-.p__benefits {
-  font-size: 18px;
-  line-height: 29px;
-}
-
-.p__description {
-  font-size: 18px;
-  line-height: 29px;
-}
-
-/* mark */
-.mark__number__course {
-  border-radius: 20px;
-  padding: 5px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: var(--white);
-  background: #b3c0d9;
-}
-
-.mark__price__course {
-  border-radius: 20px;
-  padding: 8px 5px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 12px;
-  color: var(--green);
-  background-color: var(--green-light);
-}
-
-.mark__name__site {
-  border-radius: 20px;
-  padding: 5px 8px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  color: var(--white);
-  background-color: var(--red);
-}
-
-.mark__skill {
-  border: 1px solid var(--primary);
-  border-radius: 20px;
-  padding: 5px 8px;
-  color: var(--primary);
-}
-
-.filled {
-  fill: var(--primary);
-}
-
-.star {
-  margin-right: 5px;
 }

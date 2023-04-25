@@ -1,4 +1,5 @@
-import { firstLevelMenu } from '@/Helpers/Helpers';
+import { API } from '@/helper/api';
+import { firstLevelMenu } from '@/helper/helpers';
 import { MenuItem } from '@/interface/menu.interface';
 import { withLayout } from '@/layout/Layout';
 import axios from 'axios';
@@ -33,7 +34,7 @@ export const getStaticProps: GetStaticProps<TypeProps> = async ({ params }: GetS
     return { notFound: true };
   }
 
-  const { data: menu } = await axios.post<MenuItem[]>(process.env.NEXT_PUBLIC_DOMAIN + '/api/top-page/find', {
+  const { data: menu } = await axios.post<MenuItem[]>(API.topPage.find, {
     firstCategory: firstCategoryItem.id
   });
   return {
