@@ -1,5 +1,5 @@
-import { API } from '@/helpers/api';
-import { firstLevelMenu } from '@/helpers/helpers';
+import { API } from '@/helper/api';
+import { firstLevelMenu } from '@/helper/helpers';
 import { MenuItem } from '@/interface/menu.interface';
 import { TopLevelCategory, TopPageModel } from '@/interface/page.interface';
 import { ProductModel } from '@/interface/product.interface';

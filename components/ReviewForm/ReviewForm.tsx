@@ -9,7 +9,7 @@ import { Button } from '../Button/Button';
 import { useForm, Controller } from 'react-hook-form';
 import { IReviewForm, IReviewSentResponse } from './ReviewForm.interface';
 import axios from 'axios';
-import { API } from '../../helpers/api';
+import { API } from '../../helper/api';
 import { useState } from 'react';
 
 export const ReviewForm = ({ productId, isOpened, className, ...props }: ReviewFormProps): JSX.Element => {

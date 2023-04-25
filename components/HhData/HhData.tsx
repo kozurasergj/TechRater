@@ -3,7 +3,7 @@ import styles from './HhData.module.css';
 import React from 'react';
 import RateIcon from './rate.svg';
 import { Card } from '..';
-import { priceRu } from '@/helpers/helpers';
+import { priceRu } from '@/helper/helpers';
 
 export const HhData = ({ count, juniorSalary, middleSalary, seniorSalary }: HhDataProps): JSX.Element => {
 	return (

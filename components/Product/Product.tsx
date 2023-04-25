@@ -5,7 +5,7 @@ import { Card } from '../Card/Card';
 import { Rating } from '../Rating/Rating';
 import { Tag } from '../Tag/Tag';
 import { Button } from '../Button/Button';
-import { declOfNum, priceRu } from '../../helpers/helpers';
+import { declOfNum, priceRu } from '../../helper/helpers';
 import { Divider } from '../Divider/Divider';
 import Image from 'next/image';
 import { ForwardedRef, forwardRef, useRef, useState } from 'react';

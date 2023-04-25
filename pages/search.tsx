@@ -1,4 +1,4 @@
-import { API } from '@/helpers/api';
+import { API } from '@/helper/api';
 import { MenuItem } from '@/interface/menu.interface';
 import { withLayout } from '@/layout/Layout';
 import axios from 'axios';
