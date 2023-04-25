@@ -2,12 +2,12 @@
   display: none;
 }
 
-.sortActive {
+.active {
   font-weight: 700;
   color: var(--primary);
 }
 
-.sortActive .sortIcon {
+.active .sortIcon {
   display: block;
   margin-right: 5px;
 }
@@ -18,14 +18,24 @@
   gap: 40px;
 }
 
-.sort span {
+.sortName {
+	display: none;
+}
+
+.sort button {
   display: grid;
   gap: 8px;
   grid-template-columns: 20px 1fr;
   align-items: center;
   cursor: pointer;
+  
+	border: none;
+	background: none;
+
+	font-size: 16px;
+	line-height: 22px;
 }
 
-.sort span:not(.sortActive) {
+.sort button:not(.active) {
   grid-template-columns: 1fr;
 }

@@ -14,153 +14,33 @@
   gap: 20px;
 }
 
-.hh {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 20px;
-  border-radius: 5px;
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 1200px) {
-  .hh {
-    grid-template-columns: 1fr;
-  }
-}
-
-.cardInfo {
-  padding: 20px;
-  text-align: center;
-  background-color: var(--white);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-}
-
-.wrapperSalary {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 20px;
-  text-align: center;
-  background-color: var(--white);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-}
-
-.wrapperSalary > div:not(:last-child) {
-  border-right: 1px solid var(--gray-light);
-}
-
-@media screen and (max-width: 640px) {
-  .wrapperSalary {
-    grid-template-columns: 1fr;
-    gap: 20px 0;
-  }
-  .wrapperSalary > div:not(:last-child) {
-    border-bottom: 1px solid var(--gray-light);
-    padding-bottom: 20px;
-    border-right: 0;
-  }
-}
-
-.hhSalaryTitle,
-.hhInfoTitle {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 27px;
-  text-align: center;
-  color: var(--black);
-  margin-bottom: 10px;
-}
-
-.hhInfoValue {
-  color: var(--primary);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 49px;
-  margin-bottom: 10px;
-}
-
-.hhSalaryCount {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 35px;
-  text-align: center;
-  margin-bottom: 10px;
-  color: var(--black);
-}
-
-.hhSalaryRate {
-  display: grid;
-  grid-template-columns: repeat(3, 20px);
-  justify-content: center;
-  gap: 10px;
-}
-
-.advantage {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  gap: 10px 40px;
-  margin-bottom: 30px;
-}
-
-.titleAdvantage {
-  align-self: center;
-  font-weight: bold;
-}
-
-.lineAdvantage {
-  border-left: 1px solid var(--gray-light);
-}
-
-.wrapperSkills {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px 20px;
-  justify-content: center;
-}
-
-.skill {
-  border: 1px solid var(--primary);
-  border-radius: 20px;
-  padding: 5px 8px;
-  color: var(--primary);
-  text-align: center;
-}
-
 .seo h1 {
-  margin: 0;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 35px;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  color: var(--black);
+	margin: 0;
+
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 35px;
 }
 
 .seo h2 {
-  margin: 0;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 30px;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  color: var(--black);
+	margin-top: 50px;
+	margin-bottom: 25px;
+
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 30px;
 }
 
 .seo h3 {
-  margin: 0;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
-  color: var(--black);
-  margin-top: 25px;
-  margin-bottom: 25px;
+	margin: 0;
+
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27px;
 }
 
-.seo h4 {
-  margin: 0;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 30px;
-  color: var(--black);
-  margin-top: 30px;
-  margin-bottom: 20px;
+@media screen and (max-width: 640px) {
+	.title {
+		grid-template-columns: auto 1fr;
+	}
 }

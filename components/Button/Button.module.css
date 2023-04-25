@@ -44,10 +44,7 @@
   transition: all 0.2s;
 }
 
-.primary svg {
-  fill: var(--white);
-}
-
+.primary svg,
 .ghost:hover svg {
-  fill: var(--white);
+	fill: var(--white);
 }

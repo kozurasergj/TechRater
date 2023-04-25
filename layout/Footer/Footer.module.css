@@ -1,5 +1,4 @@
 .footer {
-	grid-area: footer;
 	display: grid;
 	grid-template-columns: 1fr auto auto;
 	padding: 25px 30px;
