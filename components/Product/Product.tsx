@@ -12,14 +12,15 @@ import { ForwardedRef, forwardRef, useRef, useState } from 'react';
 import { Review } from '../Review/Review';
 import { ReviewForm } from '../ReviewForm/ReviewForm';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export const Product = motion(forwardRef(({ product, className, ...props }: ProductProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
 	const [isReviewOpened, setIsReviewOpened] = useState<boolean>(false);
 	const reviewRef = useRef<HTMLDivElement>(null);
 
 	const variants = {
-		visible: { opacity: 1, height: 'auto' },
-		hidden: { opacity: 0, height: 0 }
+		visible: { display: 'block', height: 'auto' },
+		hidden: { display: 'none', height: 0 }
 	};
 
 	const scrollToReview = () => {
@@ -61,7 +62,7 @@ export const Product = motion(forwardRef(({ product, className, ...props }: Prod
 				<div className={styles.tags}>{product.categories.map(c => <Tag key={c} className={styles.category} color='ghost'>{c}</Tag>)}</div>
 				<div className={styles.priceTitle} aria-hidden={true}>цена</div>
 				<div className={styles.creditTitle} aria-hidden={true}>кредит</div>
-				<div className={styles.rateTitle}><a href="#ref" onClick={scrollToReview}>{product.reviewCount} {declOfNum(product.reviewCount, ['отзыв', 'отзыва', 'отзывов'])}</a></div>
+				<div className={styles.rateTitle}><Link href="#ref" onClick={scrollToReview}>{product.reviewCount} {declOfNum(product.reviewCount, ['отзыв', 'отзыва', 'отзывов'])}</Link></div>
 				<Divider className={styles.hr} />
 				<div className={styles.description}>{product.description}</div>
 				<div className={styles.feature}>

@@ -7,13 +7,13 @@ import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 import React from 'react';
 
-function Type({ firstCategory }: TypeProps): JSX.Element {
+const Type = ({ firstCategory }: TypeProps): JSX.Element => {
   return (
     <>
       Type:{firstCategory}
     </>
   );
-}
+};
 
 export default withLayout(Type);
 
