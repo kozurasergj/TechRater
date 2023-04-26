@@ -9,6 +9,7 @@
 	line-height: 25px;
 	grid-template-columns: 24px 1fr;
 	gap: 20px;
+	white-space: nowrap;
 }
 
 .firstLevelList {
@@ -42,6 +43,7 @@
 	font-size: 12px;
 
 	font-weight: 300;
+	white-space: nowrap;
 }
 
 .secondBlock {
@@ -51,7 +53,8 @@
 
 	list-style: none;
 
-	border-left: 1px solid #DFDFDF;
+	border-left: 1px solid #dfdfdf;
+	white-space: nowrap;
 }
 
 .secondLevelBlock {
@@ -74,6 +77,7 @@
 
 	font-size: 14px;
 	font-weight: 500;
+	white-space: nowrap;
 }
 
 .thirdLevelActive,

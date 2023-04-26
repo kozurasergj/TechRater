@@ -6,26 +6,15 @@ import axios from 'axios';
 import { GetStaticProps } from 'next';
 import React, { useState } from 'react';
 
-function Home({ menu }: HomeProps): JSX.Element {
+const Home = ({ menu }: HomeProps): JSX.Element => {
   const [rating, setRating] = useState<number>(4);
   return (
     <>
-      <Htag tag='h1'>Заголовок</Htag>
-      <Button appearance='primary' arrow='right'>Кнопка</Button>
-      <Button appearance='ghost' arrow='down'>Кнопка</Button>
-      <P size='l'>Большой</P>
-      <P>Средний</P>
-      <P size='s'>Маленький</P>
-      <Tag size='s'>Ghost</Tag>
-      <Tag size='m' color='red'>Red</Tag>
-      <Tag size='s' color='green'>Green</Tag>
-      <Tag color='primary'>Green</Tag>
-      <Rating rating={rating} isEditable setRating={setRating} />
-      <Input placeholder='тест' />
-      <Textarea placeholder='тест area' />
+      <Htag tag='h1'>Добро пожаловать на наш сайт! </Htag>
+      <p>Здесь вы найдете самую правдивую информацию о наших курсах. Мы предлагаем широкий выбор курсов по различным темам по очень выгодным ценам. На странице каждого курса вы сможете увидеть его цену и отзывы наших настоящих учеников. Мы гарантируем качество и полезность наших курсов, поэтому смело рекомендуем вам начать свое обучение уже сегодня!</p>
     </>
   );
-}
+};
 
 export default withLayout(Home);
 
