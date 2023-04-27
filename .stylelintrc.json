@@ -1,24 +1,23 @@
 {
 	"extends": [
 		"stylelint-config-standard",
-		"stylelint-order-config-standard"
+		"stylelint-config-rational-order"
 	],
 	"plugins": [
 		"stylelint-order"
 	],
 	"rules": {
-		"indentation": [
-			"tab"
+		"indentation": 2,
+		"string-quotes": "double",
+		"color-hex-length": "long",
+		"declaration-block-trailing-semicolon": "always",
+		"order/order": [
+			"custom-properties",
+			"dollar-variables",
+			"at-variables",
+			"declarations",
+			"rules"
 		],
-		"color-hex-case": "upper",
-		"selector-class-pattern": "^.*$",
-		"declaration-block-no-redundant-longhand-properties": [
-			true,
-			{
-				"ignoreShorthands": [
-					"/grid/"
-				]
-			}
-		]
+		"order/properties-order": []
 	}
 }

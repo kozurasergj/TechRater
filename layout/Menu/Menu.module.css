@@ -1,86 +1,70 @@
 .firstLevel {
-	display: grid;
-	align-items: center;
-
-	margin-top: 20px;
-
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 25px;
-	grid-template-columns: 24px 1fr;
-	gap: 20px;
-	white-space: nowrap;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  white-space: nowrap;
 }
 
 .firstLevelList {
-	padding: 0;
-
-	list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 .firstLevelActive,
 .firstLevel:hover {
-	color: var(--primary);
+  color: var(--primary);
 }
 
 .firstLevelActive svg,
 .firstLevel:hover svg {
-	fill: var(--primary);
+  fill: var(--primary);
 }
 
 .secondLevel {
-	margin-bottom: 10px;
-	padding: 0;
-
-	cursor: pointer;
-	text-transform: uppercase;
-
-	color: var(--gray-dark);
-	border: none;
-
-	background: none;
-
-	font-size: 12px;
-
-	font-weight: 300;
-	white-space: nowrap;
+  margin-bottom: 10px;
+  padding: 0;
+  color: var(--gray-dark);
+  font-weight: 300;
+  font-size: 12px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .secondBlock {
-	margin-top: 15px;
-	margin-left: 12px;
-	padding: 0 0 0 32px;
-
-	list-style: none;
-
-	border-left: 1px solid #dfdfdf;
-	white-space: nowrap;
+  margin-top: 15px;
+  margin-left: 12px;
+  padding: 0 0 0 32px;
+  white-space: nowrap;
+  list-style: none;
+  border-left: 1px solid #dfdfdf;
 }
 
 .secondLevelBlock {
-	overflow: hidden;
-
-	padding: 0;
-
-	list-style: none;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
 }
 
 .thirdLevel {
-	display: block;
-
-	margin-bottom: 10px;
-
-	cursor: pointer;
-
-	color: var(--gray-dark);
-	outline-offset: -1px;
-
-	font-size: 14px;
-	font-weight: 500;
-	white-space: nowrap;
+  display: block;
+  margin-bottom: 10px;
+  color: var(--gray-dark);
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+  outline-offset: -1px;
+  cursor: pointer;
 }
 
 .thirdLevelActive,
 .thirdLevel:hover {
-	color: var(--primary);
+  color: var(--primary);
 }
