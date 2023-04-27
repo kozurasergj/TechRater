@@ -29,11 +29,10 @@
     "@typescript-eslint/parser": "^5.57.0",
     "eslint": "^7.23.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "stylelint": "^15.3.0",
+    "stylelint": "^15.6.0",
+    "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^33.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
     "stylelint-order": "^6.0.3",
-    "stylelint-scss": "^4.6.0",
     "typescript": "5.0.2"
   }
 }

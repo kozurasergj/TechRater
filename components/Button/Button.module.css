@@ -1,13 +1,13 @@
 .button {
   display: inline-block;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
   box-sizing: border-box;
+  padding: 10px;
   font-size: 14px;
   text-align: center;
-  transition: all 0.2s;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .primary {
@@ -20,9 +20,9 @@
 }
 
 .ghost {
-  border: 1px solid var(--gray-light);
   color: var(--black);
   background: none;
+  border: 1px solid var(--gray-light);
 }
 
 .ghost:hover {
@@ -46,5 +46,5 @@
 
 .primary svg,
 .ghost:hover svg {
-	fill: var(--white);
+  fill: var(--white);
 }
