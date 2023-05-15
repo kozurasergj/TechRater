@@ -10,8 +10,8 @@ const Home = ({ menu }: HomeProps): JSX.Element => {
   const [rating, setRating] = useState<number>(4);
   return (
     <>
-      <Htag tag='h1'>Добро пожаловать на наш сайт! </Htag>
-      <p>Здесь вы найдете самую правдивую информацию о наших курсах. Мы предлагаем широкий выбор курсов по различным темам по очень выгодным ценам. На странице каждого курса вы сможете увидеть его цену и отзывы наших настоящих учеников. Мы гарантируем качество и полезность наших курсов, поэтому смело рекомендуем вам начать свое обучение уже сегодня!</p>
+      <Htag tag='h1'>Welcome to our website!✋😀 </Htag>
+      <p>Here you will find the most truthful information about our courses. We offer a wide selection of courses on various topics at very affordable prices. On each course page, you will be able to see its price and reviews from our real students. We guarantee the quality and usefulness of our courses, so we confidently recommend you to start your learning journey today!</p>
     </>
   );
 };
