@@ -11,9 +11,9 @@ import Image from 'next/image';
 const Type = ({ firstCategory }: TypeProps): JSX.Element => {
   return (
     <>
-      <h1>Welcome to our website!✋😀📖</h1>
+      <h1>Welcome to our website!✋😀</h1>
       <p>Here you will find the most truthful information about our courses. We offer a wide selection of courses on various topics at very affordable prices. On each course page, you will be able to see its price and reviews from our real students. We guarantee the quality and usefulness of our courses, so we confidently recommend you to start your learning journey today!</p>
-      <Image src="/bg.jpg" width={900} height={700} alt="Picture of the author" style={{ width: '100%' }} />
+      <Image src="/bg.jpg" width={900} height={700} alt="Welcome to our website" style={{ width: '100%' }} />
     </>
   );
 };
