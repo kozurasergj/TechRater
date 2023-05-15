@@ -4,7 +4,7 @@ body {
   padding: 0;
   color: var(--black);
   font-family: "Noto Sans KR", sans-serif;
-  background: #F5F6F8;
+  background: #f5f6f8;
 }
 
 a {
@@ -38,4 +38,10 @@ a {
   --green-light: #c8f8e4;
   --red: #de0000;
   --font-family: "Noto Sans", sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  img {
+    height: 0px;
+  }
 }

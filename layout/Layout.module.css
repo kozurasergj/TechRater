@@ -1,7 +1,9 @@
 .wrapper {
   display: grid;
-  grid-template:
-		". header header ." auto ". sidebar body ." 1fr "footer footer footer footer" auto / auto 230px minmax(320px, 1200px) auto;
+  grid-template: ". header header ." auto ". sidebar body ." 1fr "footer footer footer footer" auto / auto 230px minmax(
+      320px,
+      1200px
+    ) auto;
   gap: 40px 30px;
   min-height: 100vh;
 }
@@ -17,6 +19,7 @@
 .body {
   grid-area: body;
   outline: none;
+  padding: 0 20px;
 }
 
 .footer {
